@@ -45,8 +45,6 @@ class Paystack:
             data = response_data.get("data")
             payment_status = data.get("status")
             paid_at = data.get("paid_at")
-            
-
 
             return verification_status, message, payment_status, paid_at
 
